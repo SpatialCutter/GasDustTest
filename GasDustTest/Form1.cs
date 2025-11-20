@@ -112,10 +112,17 @@ namespace GasDustTest
             using (var conn = new SqliteConnection("Data source = dbGasDustTest.db"))
             {
                 conn.Open();
-                SqliteCommand query = new SqliteCommand($"INSERT INTO DustTest (Date, Dust, Consistense)  VALUES (\"{DateTime.Now.ToString("dd.MM.yyyy")}\", {tbResult.Text}, {tbCons.Text})", conn);
+                SqliteCommand query = new SqliteCommand($"INSERT INTO DustTest (Date, Dust, Consistense)  VALUES (\"{DateTime.Now.ToString("dd.MM.yyyy")}\", {ReplacecComma(tbResult.Text)}, {ReplacecComma(tbCons.Text)})", conn);
                 query.ExecuteNonQuery();
                 MessageBox.Show("Данные успешно записсаны");
             }
+        }
+
+        private string ReplacecComma(string s)
+        {
+            if (tbResult.Text.IndexOf(",") == -1)
+                return s;
+            else return s.Replace(',', '.');
         }
     }
 }
