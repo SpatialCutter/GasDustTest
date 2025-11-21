@@ -71,5 +71,10 @@ namespace GasDustTest.UserControls
             tbCons.Text = cons.ToString();
             tbResult.Text = ((dust1 + dust2) / 2).ToString();
         }
+
+        private void bDBView_Click(object sender, EventArgs e)
+        {
+            new FormDBView().ShowDialog();
+        }
     }
 }

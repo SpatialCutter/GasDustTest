@@ -36,16 +36,15 @@
             // 
             // lText
             // 
-            lText.AutoSize = true;
+            lText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lText.Location = new Point(3, 2);
             lText.Name = "lText";
-            lText.Size = new Size(38, 15);
+            lText.Size = new Size(509, 72);
             lText.TabIndex = 1;
             lText.Text = "label1";
             // 
             // label
             // 
-            label.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label.AutoSize = true;
             label.Location = new Point(11, 91);
             label.Name = "label";
@@ -73,7 +72,7 @@
             Controls.Add(label);
             Controls.Add(lText);
             Name = "MassInput";
-            Size = new Size(424, 252);
+            Size = new Size(512, 301);
             Load += MassInput_Load;
             ((System.ComponentModel.ISupportInitialize)tbMass).EndInit();
             ResumeLayout(false);

@@ -34,17 +34,17 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label1.Location = new Point(3, 2);
             label1.Name = "label1";
-            label1.Size = new Size(440, 45);
+            label1.Size = new Size(509, 72);
             label1.TabIndex = 0;
-            label1.Text = "Для качественного определения необходимо пропустить газ через \r\nватный фильтр 500 дм³ со скоростью 75-80 дм³/ч.\r\nПо окончанию пропуска газа извлесь фильтр и проверить на наличие налёта.";
+            label1.Text = "Для качественного определения необходимо пропустить газ через ватный фильтр 500 дм³ со скоростью 75-80 дм³/ч.\r\nПо окончанию пропуска газа извлечь фильтр и проверить на наличие налёта.";
             // 
             // cbFilter
             // 
             cbFilter.AutoSize = true;
-            cbFilter.Location = new Point(3, 60);
+            cbFilter.Location = new Point(6, 77);
             cbFilter.Name = "cbFilter";
             cbFilter.Size = new Size(190, 19);
             cbFilter.TabIndex = 1;
@@ -56,10 +56,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonFace;
             Controls.Add(cbFilter);
             Controls.Add(label1);
             Name = "QualityTest";
-            Size = new Size(452, 250);
+            Size = new Size(512, 301);
+            Resize += QualityTest_Resize;
             ResumeLayout(false);
             PerformLayout();
         }

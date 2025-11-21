@@ -39,13 +39,14 @@
             label7 = new Label();
             label1 = new Label();
             sfd = new SaveFileDialog();
+            bDBView = new Button();
             SuspendLayout();
             // 
             // bSaveDB
             // 
-            bSaveDB.Location = new Point(1, 168);
+            bSaveDB.Location = new Point(3, 168);
             bSaveDB.Name = "bSaveDB";
-            bSaveDB.Size = new Size(167, 23);
+            bSaveDB.Size = new Size(255, 23);
             bSaveDB.TabIndex = 13;
             bSaveDB.Text = "Сохранить в базу данных";
             bSaveDB.UseVisualStyleBackColor = true;
@@ -53,9 +54,10 @@
             // 
             // bSaveFile
             // 
-            bSaveFile.Location = new Point(185, 168);
+            bSaveFile.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            bSaveFile.Location = new Point(278, 168);
             bSaveFile.Name = "bSaveFile";
-            bSaveFile.Size = new Size(162, 23);
+            bSaveFile.Size = new Size(240, 23);
             bSaveFile.TabIndex = 14;
             bSaveFile.Text = "Сохранить в файл";
             bSaveFile.UseVisualStyleBackColor = true;
@@ -63,26 +65,29 @@
             // 
             // tbDust2
             // 
-            tbDust2.Location = new Point(247, 41);
+            tbDust2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tbDust2.Location = new Point(333, 41);
             tbDust2.Name = "tbDust2";
             tbDust2.ReadOnly = true;
-            tbDust2.Size = new Size(100, 23);
+            tbDust2.Size = new Size(185, 23);
             tbDust2.TabIndex = 9;
             // 
             // tbResult
             // 
+            tbResult.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             tbResult.Location = new Point(141, 122);
             tbResult.Name = "tbResult";
             tbResult.ReadOnly = true;
-            tbResult.Size = new Size(206, 23);
+            tbResult.Size = new Size(377, 23);
             tbResult.TabIndex = 10;
             // 
             // tbCons
             // 
+            tbCons.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             tbCons.Location = new Point(141, 82);
             tbCons.Name = "tbCons";
             tbCons.ReadOnly = true;
-            tbCons.Size = new Size(206, 23);
+            tbCons.Size = new Size(377, 23);
             tbCons.TabIndex = 11;
             // 
             // tbDust1
@@ -90,7 +95,7 @@
             tbDust1.Location = new Point(141, 41);
             tbDust1.Name = "tbDust1";
             tbDust1.ReadOnly = true;
-            tbDust1.Size = new Size(100, 23);
+            tbDust1.Size = new Size(175, 23);
             tbDust1.TabIndex = 12;
             // 
             // label9
@@ -134,11 +139,22 @@
             sfd.FileName = "DustTest.txt";
             sfd.Filter = "Текстовый документ|*.txt";
             // 
+            // bDBView
+            // 
+            bDBView.Location = new Point(3, 197);
+            bDBView.Name = "bDBView";
+            bDBView.Size = new Size(255, 23);
+            bDBView.TabIndex = 13;
+            bDBView.Text = "Просмотр базы данных";
+            bDBView.UseVisualStyleBackColor = true;
+            bDBView.Click += bDBView_Click;
+            // 
             // ResultOutput
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label1);
+            Controls.Add(bDBView);
             Controls.Add(bSaveDB);
             Controls.Add(bSaveFile);
             Controls.Add(tbDust2);
@@ -149,7 +165,7 @@
             Controls.Add(label8);
             Controls.Add(label7);
             Name = "ResultOutput";
-            Size = new Size(464, 214);
+            Size = new Size(521, 250);
             Load += ResultOutput_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -168,5 +184,6 @@
         private Label label7;
         private Label label1;
         private SaveFileDialog sfd;
+        private Button bDBView;
     }
 }

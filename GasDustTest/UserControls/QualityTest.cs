@@ -23,5 +23,10 @@ namespace GasDustTest.UserControls
         {
             check = cbFilter.Checked;
         }
+
+        private void QualityTest_Resize(object sender, EventArgs e)
+        {
+            label1.MaximumSize = this.Size;
+        }
     }
 }

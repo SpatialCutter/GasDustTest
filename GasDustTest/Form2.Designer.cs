@@ -46,15 +46,16 @@
             // pMain
             // 
             pMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pMain.BackColor = SystemColors.Control;
             pMain.Location = new Point(12, 56);
             pMain.Name = "pMain";
-            pMain.Size = new Size(540, 343);
+            pMain.Size = new Size(512, 301);
             pMain.TabIndex = 1;
             // 
             // bNext
             // 
             bNext.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            bNext.Location = new Point(477, 415);
+            bNext.Location = new Point(449, 373);
             bNext.Name = "bNext";
             bNext.Size = new Size(75, 23);
             bNext.TabIndex = 2;
@@ -66,12 +67,15 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(564, 450);
+            ClientSize = new Size(536, 408);
             Controls.Add(bNext);
             Controls.Add(pMain);
             Controls.Add(lHeader);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            MinimumSize = new Size(488, 345);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Мастер определения содержания смолы и пыли в газе бытового потребления";
             Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();

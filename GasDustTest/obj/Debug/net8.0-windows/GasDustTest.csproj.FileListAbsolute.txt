@@ -50,3 +50,4 @@ D:\Visual Studio Projects\GasDustTest\GasDustTest\obj\Debug\net8.0-windows\GasDu
 D:\Visual Studio Projects\GasDustTest\GasDustTest\obj\Debug\net8.0-windows\GasDustTest.UserControls.MassInput.resources
 D:\Visual Studio Projects\GasDustTest\GasDustTest\obj\Debug\net8.0-windows\GasDustTest.UserControls.VolumeInput.resources
 D:\Visual Studio Projects\GasDustTest\GasDustTest\obj\Debug\net8.0-windows\GasDustTest.UserControls.ResultOutput.resources
+D:\Visual Studio Projects\GasDustTest\GasDustTest\obj\Debug\net8.0-windows\GasDustTest.FormDBView.resources

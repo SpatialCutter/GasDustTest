@@ -37,11 +37,10 @@
             // 
             // lText
             // 
-            lText.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lText.AutoSize = true;
+            lText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lText.Location = new Point(2, 2);
             lText.Name = "lText";
-            lText.Size = new Size(38, 15);
+            lText.Size = new Size(510, 78);
             lText.TabIndex = 0;
             lText.Text = "label1";
             // 
@@ -60,7 +59,7 @@
             bStart.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             bStart.Location = new Point(3, 113);
             bStart.Name = "bStart";
-            bStart.Size = new Size(171, 23);
+            bStart.Size = new Size(252, 23);
             bStart.TabIndex = 2;
             bStart.Text = "Запустить таймер";
             bStart.UseVisualStyleBackColor = true;
@@ -79,7 +78,7 @@
             Controls.Add(lTimer);
             Controls.Add(lText);
             Name = "LabeledTimer";
-            Size = new Size(431, 210);
+            Size = new Size(512, 301);
             Load += LabeledTimer_Load;
             ResumeLayout(false);
             PerformLayout();

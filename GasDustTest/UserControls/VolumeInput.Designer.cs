@@ -51,7 +51,6 @@
             // 
             // label
             // 
-            label.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label.AutoSize = true;
             label.Location = new Point(9, 93);
             label.Name = "label";
@@ -62,16 +61,15 @@
             // 
             // lText
             // 
-            lText.AutoSize = true;
+            lText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lText.Location = new Point(3, 2);
             lText.Name = "lText";
-            lText.Size = new Size(38, 15);
+            lText.Size = new Size(509, 69);
             lText.TabIndex = 4;
             lText.Text = "label1";
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Location = new Point(53, 120);
             label1.Name = "label1";
@@ -94,7 +92,6 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Location = new Point(69, 150);
             label2.Name = "label2";
@@ -125,7 +122,7 @@
             Controls.Add(label);
             Controls.Add(lText);
             Name = "VolumeInput";
-            Size = new Size(447, 242);
+            Size = new Size(512, 301);
             Load += VolumeInput_Load;
             ((System.ComponentModel.ISupportInitialize)tbVolume).EndInit();
             ((System.ComponentModel.ISupportInitialize)tbTemp).EndInit();
